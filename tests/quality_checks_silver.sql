@@ -1,10 +1,21 @@
 /*
-# NOTE: This script is used only for testing and identifying data issues.
-# It is not related to the production or main project code.
+===============================================================================
+Quality Checks
+===============================================================================
+Script Purpose:
+    This script performs various quality checks for data consistency, accuracy, 
+    and standardization across the 'silver' layer. It includes checks for:
+    - Null or duplicate primary keys.
+    - Unwanted spaces in string fields.
+    - Data standardization and consistency.
+    - Invalid date ranges and orders.
+    - Data consistency between related fields.
 
-In this script we try to find issues with the data in the Bronze Layer and replicate what is found to the proc_load_silver script,
-in order to perfectly clean and transform the data before migrating to the Silver Layer.
-*/ 
+Usage Notes:
+    - Run these checks after data loading Silver Layer.
+    - Investigate and resolve any discrepancies found during the checks.
+===============================================================================
+*/
 
 -------------------------------------------------------------------------------------------------
 -- Cleaning & Transformation for bronze.crm_cust_info & Quality Checks for silver.crm_cust_info
