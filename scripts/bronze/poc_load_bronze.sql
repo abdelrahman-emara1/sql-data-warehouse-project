@@ -30,7 +30,7 @@ BEGIN
 		PRINT('Loading CRM Tables');
 		PRINT('------------------------------------------');
 
---------------------- 1		
+		----- Loading Table: bronze.crm_cust_info -----
 		SET @start_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.crm_cust_info');
 		TRUNCATE TABLE bronze.crm_cust_info; 
@@ -47,7 +47,7 @@ BEGIN
 		PRINT 'Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '---------------------';
 
---------------------- 2	
+		----- Loading Table: bronze.crm_prd_info -----
 		SET @start_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.crm_prd_info');
 		TRUNCATE TABLE bronze.crm_prd_info;
@@ -64,7 +64,7 @@ BEGIN
 		PRINT 'Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '---------------------';
 
---------------------- 3
+		----- Loading Table: bronze.crm_sales_details -----
 		SET @end_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.crm_sales_details');
 		TRUNCATE TABLE bronze.crm_sales_details;
@@ -86,7 +86,7 @@ BEGIN
 		PRINT('Loading ERP Tables');
 		PRINT('------------------------------------------');
 
---------------------- 1
+		----- Loading Table: bronze.erp_cust_az12 -----
 		SET @end_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.erp_cust_az12');
 		TRUNCATE TABLE bronze.erp_cust_az12;
@@ -103,7 +103,7 @@ BEGIN
 		PRINT 'Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '---------------------';
 
---------------------- 2
+		----- Loading Table: bronze.erp_loc_a101 -----
 		SET @end_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.erp_loc_a101');
 		TRUNCATE TABLE bronze.erp_loc_a101;
@@ -120,7 +120,7 @@ BEGIN
 		PRINT 'Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '---------------------';
 
---------------------- 3
+		----- Loading Table: bronze.erp_px_cat_g1v2 -----
 		SET @end_time = GETDATE()
 		PRINT('>> Truncating Table: bronze.erp_px_cat_g1v2');
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
