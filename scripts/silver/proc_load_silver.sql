@@ -76,7 +76,7 @@ BEGIN
 		----- Loading Table: silver.crm_prd_info -----
 		SET @start_time = GETDATE()
 		PRINT '>> Truncating Table: silver.crm_prd_info';
-		TRUNCATE TABLE silver.crm_cust_info
+		TRUNCATE TABLE silver.crm_prd_info
 		PRINT '>> Inserting Date Into: silver.crm_prd_info';
 		INSERT INTO silver.crm_prd_info (
 			prd_id,
@@ -111,7 +111,7 @@ BEGIN
 		----- Loading Table: silver.crm_sales_details -----
 		SET @start_time = GETDATE()
 		PRINT '>> Truncating Table: silver.crm_sales_details';
-		TRUNCATE TABLE silver.crm_cust_info
+		TRUNCATE TABLE silver.crm_sales_details
 		PRINT '>> Inserting Date Into: silver.crm_sales_details';
 		INSERT INTO silver.crm_sales_details (
 			sls_ord_num,
@@ -162,7 +162,7 @@ BEGIN
 		----- Loading Table: silver.erp_cust_az12 -----
 		SET @start_time = GETDATE()
 		PRINT '>> Truncating Table: silver.erp_cust_az12';
-		TRUNCATE TABLE silver.crm_cust_info
+		TRUNCATE TABLE silver.erp_cust_az12
 		PRINT '>> Inserting Date Into: silver.erp_cust_az12';
 		INSERT INTO silver.erp_cust_az12 (cid, bdate, gen)
 			SELECT 
@@ -186,7 +186,7 @@ BEGIN
 		----- Loading Table: silver.erp_loc_a101 -----
 		SET @start_time = GETDATE()
 		PRINT '>> Truncating Table: silver.erp_loc_a101';
-		TRUNCATE TABLE silver.crm_cust_info
+		TRUNCATE TABLE silver.erp_loc_a101
 		PRINT '>> Inserting Date Into: silver.erp_loc_a101';
 		INSERT INTO silver.erp_loc_a101 (cid, cntry)
 		SELECT 
@@ -205,7 +205,7 @@ BEGIN
 		----- Loading Table: silver.erp_px_cat_g1v2 -----
 		SET @start_time = GETDATE()
 		PRINT '>> Truncating Table: silver.erp_px_cat_g1v2';
-		TRUNCATE TABLE silver.crm_cust_info
+		TRUNCATE TABLE silver.erp_px_cat_g1v2
 		PRINT '>> Inserting Date Into: silver.erp_px_cat_g1v2';
 		INSERT INTO silver.erp_px_cat_g1v2 (id, cat, subcat, maintenance)
 		SELECT 
