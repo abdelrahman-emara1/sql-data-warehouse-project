@@ -1,15 +1,24 @@
-# Data Warehouse and Analytics Project
+# 📊 End-to-End Data Warehouse & Analytics Solution
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+This project is a complete end-to-end Data Warehouse and Analytics solution delivered in two main phases:
+
+Phase 1 — Data Warehouse (SQL Server):
+Data ingestion from CSV files into SQL Server, applying ETL transformations, data cleaning, data integration, and preparing business-ready data in the Gold Layer using Medallion Architecture.
+
+Phase 2 — Business Intelligence (Power BI):
+Developing a fully interactive dashboard in Power BI using the prepared Gold Layer data. This includes creating custom DAX measures, adjusting data types for accurate analysis, and generating insights on sales performance, customer behavior, and product performance.
 
 ---
+## 🧱 Project Architecture
 
-## 🏗️ Data Architecture
+A complete pipeline built using **SQL Server**, following Medallion Architecture:
 
-The data architecture for this project follows Medallion Architecture: **Bronze**, **Silver**, and **Gold** layers:
+> **Bronze → Silver → Gold → BI Reporting**
 
-![Data Architecture](docs/data_architecture.png)
+![Architecture](docs/dwh_docs/data_architecture.png)
+
+
+---
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.  
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.  
@@ -17,21 +26,70 @@ The data architecture for this project follows Medallion Architecture: **Bronze*
 
 ---
 
+
 ## 📖 Project Overview
 
-This project involves:
+### **Phase 1️⃣ — Data Warehouse (Data Engineering)**
 
-1. **Data Architecture**: Designing a modern Data Warehouse using Medallion Architecture (Bronze, Silver, Gold).
-2. **ETL Pipelines**: Extracting, transforming, and loading data from raw sources into the warehouse.
-3. **Data Modeling**: Developing Fact and Dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports for business insights.
+#### 🎯 Goal  
+Design and build a scalable analytical data warehouse to unify ERP & CRM sales data.
 
-🎯 This repository is an excellent resource for anyone demonstrating skills in:
-- SQL Development  
-- Data Engineering  
-- ETL Pipeline Development  
-- Data Modeling  
-- Data Analytics  
+#### 🔧 Key Deliverables  
+- **Data Ingestion** → Raw CSVs → SQL Server (Bronze)
+- **Data Quality & Standardization** → Cleaned + Validated data (Silver)
+- **Data Modeling** → Fact & Dimension tables in a star schema (Gold)
+- **SQL Analytical Queries** → Business-ready insights
+- **Documentation** → Data dictionary + naming conventions + ETL flows
+
+#### 🧩 Skills Demonstrated  
+✔ SQL Development  
+✔ ETL Pipeline Engineering  
+✔ Data Modeling  
+✔ Data Quality Verification  
+✔ Warehouse Architecture Design  
+
+---
+
+### **Phase 2️⃣ — BI & Reporting (Data Analytics)**
+
+After preparing the Gold Layer, the data is visualized in **Power BI** with:
+
+#### 🔍 Analytical Insights
+- **Main KPI Page**
+  - Revenue performance & YoY growth
+  - Average order value
+  - Revenue by channel & region
+
+- **Customer Analysis Page**
+  - Segmentation by spending behavior
+  - Retention & repeat purchase metrics
+
+- **Product Performance Page**
+  - Top vs. low selling products
+  - Profitability insights
+
+#### 🧭 User Experience Features
+- **Home Page** → Clear navigation hub
+- **Search Page** → Search customers/products across all pages
+- **Ask AI Page** → Natural-language Q&A for business queries
+
+✔ Professional, consistent design  
+✔ Business storytelling applied  
+✔ Interactive experience for stakeholders  
+
+---
+
+## 🚀 Tools & Technologies
+
+| Category | Tools |
+|---------|------|
+| Database & ETL | SQL Server Express, SSMS |
+| Data Modeling | Star Schema, DrawIO |
+| BI & Reporting | Power BI |
+| Documentation | Notion, GitHub |
+| Version Control | Git |
+
+All technologies used are **free and accessible**.
 
 ---
 
@@ -74,34 +132,7 @@ Develop SQL analytical queries to generate insights about:
 - Sales Trends  
 
 For more details, see:  
-📌 `docs/requirements.md`
-
----
-## 📂 Repository Structure
-data-warehouse-project/
-│
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file showing ETL techniques
-│   ├── data_architecture.drawio        # Main architecture diagram
-│   ├── data_catalog.md                 # Dataset catalog + metadata
-│   ├── data_flow.drawio                # Data flow diagram
-│   ├── data_models.drawio              # Star schema model
-│   ├── naming-conventions.md           # Naming rules for tables, columns, etc.
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Raw ingestion scripts
-│   ├── silver/                         # Cleaning and standardizing data
-│   ├── gold/                           # Fact/Dimension + analytics views
-│
-├── tests/                              # Test scripts for data quality
-│
-├── README.md                           # Project overview
-├── LICENSE                             # MIT license
-├── .gitignore                          # Ignored files config
-└── requirements.txt                    # Dependencies
-
+📌 `docs/dwh_docs/requirements.md`
 
 ---
 
