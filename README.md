@@ -121,6 +121,8 @@ Build a modern data warehouse in SQL Server to consolidate sales data and enable
 - **Scope**: Latest dataset only (no historization)  
 - **Documentation**: Provide clear data model and table descriptions
 
+For more details, see:  
+📌 `docs/dwh_docs/requirements.md`
 ---
 
 ### ✅ BI & Reporting (Data Analysis)
@@ -132,8 +134,7 @@ Develop SQL analytical queries to generate insights about:
 - Sales Trends  
 
 For more details, see:  
-📌 `docs/dwh_docs/requirements.md`
-
+📌 `docs/analytics_dashboard`
 ---
 
 ## 🛡️ License
