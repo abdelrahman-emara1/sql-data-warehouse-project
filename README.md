@@ -15,7 +15,7 @@ A complete pipeline built using **SQL Server**, following Medallion Architecture
 
 > **Bronze → Silver → Gold → BI Reporting**
 
-![Architecture](docs/dwh_docs/data_architecture.png)
+![Architecture](docs/data_architecture.png)
 
 
 ---
