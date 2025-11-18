@@ -1,4 +1,4 @@
-# 📊 End-to-End Data Warehouse & Analytics Solution
+# 📊 End-to-End Sales Data Warehouse & Analytics Solution
 
 This project is a complete end-to-end Data Warehouse and Analytics solution delivered in two main phases:
 
