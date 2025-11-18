@@ -15,7 +15,11 @@ A complete pipeline built using **SQL Server**, following Medallion Architecture
 
 > **Bronze → Silver → Gold → BI Reporting**
 
-![Architecture](docs/data_architecture.png)
+**Data Warehouse Architecture**
+![Architecture Diagram](docs/data_architecture.png)
+
+**Power BI Dashboard - Home Page**
+![Dashboard Home](docs/dashboard_home_page.png)
 
 
 ---
@@ -136,6 +140,17 @@ Develop SQL analytical queries to generate insights about:
 For more details, see:  
 📌 `docs/analytics_dashboard`
 ---
+
+## 🚀 How to Use This Project
+
+1️⃣ Open the SQL scripts inside `/scripts` folder  
+2️⃣ Run them in order: Bronze → Silver → Gold  
+3️⃣ Open the Power BI file `/docs/dwh_sales_analytics.pbix`  
+4️⃣ Refresh data connection if needed (SQL Server)
+
+---
+
+
 
 ## 🛡️ License
 
