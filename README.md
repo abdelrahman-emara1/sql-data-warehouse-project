@@ -107,8 +107,6 @@ Everything used here is **free** and publicly available:
 - **[GitHub](https://github.com/):** Code versioning and project hosting  
 - **[DrawIO](https://www.drawio.com/):** Used for architecture, models, and ETL diagrams  
 - **[Notion](https://www.notion.com/):** For project planning and documentation  
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** All project phases and tasks
-
 ---
 
 ## 🚀 Project Requirements
